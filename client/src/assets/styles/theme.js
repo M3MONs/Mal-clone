@@ -7,6 +7,7 @@ export const theme = {
         black: "#000000",
         gunMetal: "#2F323A",
         pink: "#FFDBDA",
+        darkWhite: "#E1E7F5",
         white: "#FFFFFF",
     },
 };
