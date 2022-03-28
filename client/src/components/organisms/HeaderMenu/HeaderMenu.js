@@ -4,6 +4,8 @@ import Dropdown from "components/molecules/Dropdown/Dropdown";
 
 import { DropdownItems as Dropdowns } from "./data/DropdownItems";
 
+import { ReactComponent as SearchSvg } from "assets/svg/search-solid.svg";
+
 const Wrapper = styled.div`
     width: 100%;
     height: 36px;
@@ -21,7 +23,33 @@ const DropdownsWrapper = styled.div`
 
 const SearchWrapper = styled.div`
     padding-right: 6px;
+    height: 22px;
     display: flex;
+    align-items: center;
+    button {
+        height: 22px;
+        padding: 0 5px;
+        margin: 0;
+        border-radius: 0 4px 4px 0;
+        border: 0px white solid;
+        /* border-left: 1px solid white; */
+        /* background: none; */
+        outline: none;
+        overflow: hidden;
+    }
+`;
+
+const SearchIcon = styled(SearchSvg)`
+    width: 12px;
+    height: 12px;
+`;
+
+const SearchInput = styled.input`
+    min-width: 220px;
+    border: none;
+    outline: none;
+    height: 22px;
+    padding: 2px 5px;
 `;
 
 const SelectWrapper = styled.div`
@@ -29,9 +57,13 @@ const SelectWrapper = styled.div`
         height: 22px;
         width: 90px;
         overflow: hidden;
+        border: none;
+        border-right: 1px solid black;
         border-radius: 5px 0 0 5px;
+        font-size: 12px;
         option {
             text-transform: capitalize;
+            font-size: 12px;
         }
     }
 `;
@@ -50,11 +82,9 @@ const HeaderMenu = () => {
                         <option value=''>Manga</option>
                     </select>
                 </SelectWrapper>
-                <input type='text' />
+                <SearchInput type='text' placeholder='Search Anime, Manga, and more...' />
                 <button>
-                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-                        <path d='M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z' />
-                    </svg>
+                    <SearchIcon fill='blue' />
                 </button>
             </SearchWrapper>
         </Wrapper>
