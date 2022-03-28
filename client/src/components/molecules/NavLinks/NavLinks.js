@@ -8,13 +8,27 @@ const Wrapper = styled.div`
     gap: 10px;
 `;
 
+const LinkItems = [
+    {
+        name: "Login",
+        ref: "#",
+        filled: false,
+    },
+    {
+        name: "Sign Up",
+        ref: "#",
+        filled: true,
+    },
+];
+
 const NavLinks = () => {
     return (
         <Wrapper>
-            <NavLink href='#'>Login</NavLink>
-            <NavLink href='#' filled>
-                Sign Up
-            </NavLink>
+            {LinkItems.map((item) => (
+                <NavLink href={item.ref} filled={item.filled}>
+                    {item.name}
+                </NavLink>
+            ))}
         </Wrapper>
     );
 };
