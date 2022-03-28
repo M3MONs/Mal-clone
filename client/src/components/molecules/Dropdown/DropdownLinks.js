@@ -4,11 +4,12 @@ import styled from "styled-components";
 import DropdownLink from "components/atoms/DropdownLink/DropdownLink";
 
 const LinksList = styled.ul`
-    background-color: ${({ theme }) => theme.colors.darkBlue};
+    background-color: ${({ theme }) => theme.colors.darkWhite};
     display: flex;
     flex-direction: column;
     position: absolute;
-    min-width: 60px;
+    min-width: 118px;
+    list-style: none;
 `;
 
 const DropdownLinks = ({ links }) => {
