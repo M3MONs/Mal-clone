@@ -6,9 +6,15 @@ const LinkWrapper = styled.li`
     font-size: 11px;
     font-weight: normal;
     text-align: center;
+    &:hover {
+        background: ${({ theme }) => theme.colors.darkBlue};
+        a {
+            color: ${({ theme }) => theme.colors.white};
+        }
+    }
     a {
         text-decoration: none;
-        color: #fff;
+        color: ${({ theme }) => theme.colors.black};
     }
 `;
 
