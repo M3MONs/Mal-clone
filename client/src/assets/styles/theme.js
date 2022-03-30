@@ -8,6 +8,7 @@ export const theme = {
         gunMetal: "#2F323A",
         pink: "#FFDBDA",
         darkWhite: "#E1E7F5",
+        gray: "#ebebeb",
         white: "#FFFFFF",
     },
 };
