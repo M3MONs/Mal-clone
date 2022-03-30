@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "components/atoms/NavLink/NavLink";
+import { LinkItems } from "./data/LinkItems";
 
 const Wrapper = styled.div`
     display: flex;
@@ -11,10 +12,11 @@ const Wrapper = styled.div`
 const NavLinks = () => {
     return (
         <Wrapper>
-            <NavLink href='#'>Login</NavLink>
-            <NavLink href='#' filled>
-                Sign Up
-            </NavLink>
+            {LinkItems.map((item) => (
+                <NavLink href={item.ref} filled={item.filled}>
+                    {item.name}
+                </NavLink>
+            ))}
         </Wrapper>
     );
 };
