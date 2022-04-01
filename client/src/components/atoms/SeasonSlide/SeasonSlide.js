@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Wrapper } from "./SeasonAnime.style";
+import { Wrapper } from "./SeasonSlide.style";
 
-const SeasonAnime = ({ title, link, img }) => {
+const SeasonSlide = ({ item: { title, link, img } }) => {
     return (
         <Wrapper>
             <a href={link} target='_blank' rel='noreferrer'>
@@ -13,16 +13,16 @@ const SeasonAnime = ({ title, link, img }) => {
     );
 };
 
-SeasonAnime.defaultProps = {
+SeasonSlide.defaultProps = {
     title: "",
     link: "/#",
     img: "",
 };
 
-SeasonAnime.propTypes = {
+SeasonSlide.propTypes = {
     title: PropTypes.string,
     link: PropTypes.string,
     img: PropTypes.string,
 };
 
-export default SeasonAnime;
+export default SeasonSlide;
