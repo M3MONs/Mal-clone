@@ -3,7 +3,10 @@ import PropTypes from "prop-types";
 import { Wrapper, Header, Content } from "./Widget.style";
 import Slider from "../Slider/Slider";
 
-const Widget = ({ children, title, linkTitle, link, slider = false, slides = null }) => {
+const Widget = ({
+    widget: { title, linkTitle, link, slider, slides = null, display = "block" },
+    children,
+}) => {
     return (
         <Wrapper>
             <Header>
@@ -12,7 +15,7 @@ const Widget = ({ children, title, linkTitle, link, slider = false, slides = nul
                     {linkTitle}
                 </a>
             </Header>
-            <Content slider={slider}>
+            <Content display={display}>
                 {slider ? <Slider slides={slides}>{children}</Slider> : children}
             </Content>
         </Wrapper>

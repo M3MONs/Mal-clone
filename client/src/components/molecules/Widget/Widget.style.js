@@ -21,7 +21,7 @@ export const Header = styled.div`
 `;
 
 export const Content = styled.div`
-    display: ${(props) => (props.slider ? "block" : "flex")};
+    display: ${(props) => (props?.display ? props?.display : "block")};
     justify-content: space-between;
     margin: 5px 0 20px;
 `;
