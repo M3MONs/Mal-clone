@@ -11,6 +11,7 @@ const Wrapper = styled.nav`
 `;
 
 const NavWrapper = styled(Container)`
+    padding: 0 !important;
     && {
         height: 100%;
         display: flex;
