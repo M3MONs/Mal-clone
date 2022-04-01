@@ -1,6 +1,8 @@
 import EventLink from "components/atoms/EventLink/EventLink";
-import SeasonAnime from "components/atoms/SeasonAnime/SeasonAnime";
-import SliderLink from "components/atoms/SliderLink/SliderLink";
+import SeasonSlide from "components/atoms/SeasonSlide/SeasonSlide";
+import DefaultSlide from "components/atoms/DefaultSlide/DefaultSlide";
+import TrailerSlide from "components/atoms/TrailerSlide/TrailerSlide";
+import MiniArticle from "components/atoms/MiniArticle/MiniArticle";
 
 export const Widgets = [
     {
@@ -8,6 +10,7 @@ export const Widgets = [
         linkTitle: "Visit MALxJapan",
         link: "https://mxj.myanimelist.net/",
         slider: false,
+        display: "flex",
         Atom: EventLink,
         items: [
             {
@@ -31,7 +34,7 @@ export const Widgets = [
         title: "Spring 2022 Anime",
         linkTitle: "View More",
         link: "https://myanimelist.net/anime/season",
-        Atom: SeasonAnime,
+        Atom: SeasonSlide,
         slider: true,
         slides: 4.5,
         items: [
@@ -141,7 +144,7 @@ export const Widgets = [
         title: "Manga Store",
         linkTitle: "View More",
         link: "https://myanimelist.net/store",
-        Atom: SliderLink,
+        Atom: DefaultSlide,
         slider: true,
         slides: 6.5,
         items: [
@@ -226,7 +229,7 @@ export const Widgets = [
         title: "Latest Updated Episode Videos",
         linkTitle: "View More",
         link: "https://myanimelist.net/watch/episode",
-        Atom: SliderLink,
+        Atom: DefaultSlide,
         slider: true,
         slides: 6.5,
         items: [
@@ -379,6 +382,228 @@ export const Widgets = [
                 title: "Fugou Keiji: Balance:Unlimited",
                 link: "https://myanimelist.net/anime/41120/Fugou_Keiji__Balance_Unlimited/episode/11",
                 img: "https://cdn.myanimelist.net/r/108x163/images/anime/1066/106556.jpg?s=9064d94b5fff3cca8fd62819169dab9d",
+            },
+        ],
+    },
+    {
+        title: "Most Popular Anime Trailers",
+        linkTitle: "View More",
+        link: "https://myanimelist.net/watch/promotion/popular",
+        Atom: TrailerSlide,
+        slider: true,
+        slides: 3.5,
+        items: [
+            {
+                title: "Shingeki no Kyojin",
+                link: "https://myanimelist.net/anime/16498/Shingeki_no_Kyojin",
+                img: "https://cdn.myanimelist.net/images/anime/10/47347.jpg",
+                ytLink: "https://www.youtube.com/embed/KKzmOh4SuBc?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Death Note",
+                link: "https://myanimelist.net/anime/1535/Death_Note",
+                img: "https://cdn.myanimelist.net/images/anime/9/9453.jpg",
+                ytLink: "https://www.youtube.com/embed/4TrEY9Zs_FQ?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Fullmetal Alchemist: Brotherhood",
+                link: "https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood",
+                img: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+                ytLink: "https://www.youtube.com/embed/--IcmZkvL0Q?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "One Punch Man",
+                link: "https://myanimelist.net/anime/30276/One_Punch_Man",
+                img: "https://cdn.myanimelist.net/images/anime/12/76049.jpg",
+                ytLink: "https://www.youtube.com/embed/6Bdb1V0Io_g?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Sword Art Online",
+                link: "https://myanimelist.net/anime/11757/Sword_Art_Online",
+                img: "https://cdn.myanimelist.net/images/anime/11/39717.jpg",
+                ytLink: "https://www.youtube.com/embed/6ohYYtxfDCg?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Boku no Hero Academia",
+                link: "https://myanimelist.net/anime/31964/Boku_no_Hero_Academia",
+                img: "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
+                ytLink: "https://www.youtube.com/embed/o0L1YC9YgxM?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Tokyo Ghoul",
+                link: "https://myanimelist.net/anime/22319/Tokyo_Ghoul",
+                img: "https://cdn.myanimelist.net/images/anime/5/64449.jpg",
+                ytLink: "https://www.youtube.com/embed/vGuQeQsoRgU?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Naruto",
+                link: "https://myanimelist.net/anime/20/Naruto",
+                img: "https://cdn.myanimelist.net/images/anime/13/17405.jpg",
+                ytLink: "https://www.youtube.com/embed/j2hiC9BmJlQ?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Kimetsu no Yaiba",
+                link: "https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba",
+                img: "https://cdn.myanimelist.net/images/anime/1286/99889.jpg",
+                ytLink: "https://www.youtube.com/embed/j6coxXGu6mM?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Hunter x Hunter (2011)",
+                link: "https://myanimelist.net/anime/11061/Hunter_x_Hunter_2011",
+                img: "https://cdn.myanimelist.net/images/anime/1337/99013.jpg",
+                ytLink: "https://www.youtube.com/embed/yBTW-O_BiB0?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Kimi no Na wa.",
+                link: "https://myanimelist.net/anime/32281/Kimi_no_Na_wa",
+                img: "https://cdn.myanimelist.net/images/anime/5/87048.jpg",
+                ytLink: "https://www.youtube.com/embed/RBBrZ3d2sJE?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Shingeki no Kyojin Season 2",
+                link: "https://myanimelist.net/anime/25777/Shingeki_no_Kyojin_Season_2",
+                img: "https://cdn.myanimelist.net/images/anime/4/84177.jpg",
+                ytLink: "https://www.youtube.com/embed/e8IthrzLP94?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Steins;Gate",
+                link: "https://myanimelist.net/anime/9253/Steins_Gate",
+                img: "https://cdn.myanimelist.net/images/anime/5/73199.jpg",
+                ytLink: "https://www.youtube.com/embed/gaOvEIkeyzU?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Boku no Hero Academia 2nd Season",
+                link: "https://myanimelist.net/anime/33486/Boku_no_Hero_Academia_2nd_Season",
+                img: "https://cdn.myanimelist.net/images/anime/12/85221.jpg",
+                ytLink: "https://www.youtube.com/embed/0rBiwqTqHEU?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "No Game No Life",
+                link: "https://myanimelist.net/anime/19815/No_Game_No_Life",
+                img: "https://cdn.myanimelist.net/images/anime/1074/111944.jpg",
+                ytLink: "https://www.youtube.com/embed/TqMCYf1FibU?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Naruto: Shippuuden",
+                link: "https://myanimelist.net/anime/1735/Naruto__Shippuuden",
+                img: "https://cdn.myanimelist.net/images/anime/5/17407.jpg",
+                ytLink: "https://www.youtube.com/embed/1dy2zPPrKD0?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Toradora!",
+                link: "https://myanimelist.net/anime/4224/Toradora",
+                img: "https://cdn.myanimelist.net/images/anime/13/22128.jpg",
+                ytLink: "https://www.youtube.com/embed/ya570uUgQNc?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Koe no Katachi",
+                link: "https://myanimelist.net/anime/28851/Koe_no_Katachi",
+                img: "https://cdn.myanimelist.net/images/anime/1122/96435.jpg",
+                ytLink: "https://www.youtube.com/embed/NbElewFH464?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Noragami",
+                link: "https://myanimelist.net/anime/20507/Noragami",
+                img: "https://cdn.myanimelist.net/images/anime/9/77809.jpg",
+                ytLink: "https://www.youtube.com/embed/KjSZ7X-kvi0?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Shingeki no Kyojin Season 3",
+                link: "https://myanimelist.net/anime/35760/Shingeki_no_Kyojin_Season_3",
+                img: "https://cdn.myanimelist.net/images/anime/1173/92110.jpg",
+                ytLink: "https://www.youtube.com/embed/r8EVptqU6zE?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Shigatsu wa Kimi no Uso",
+                link: "https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso",
+                img: "https://cdn.myanimelist.net/images/anime/3/67177.jpg",
+                ytLink: "https://www.youtube.com/embed/Sk39zsayK_0?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Re:Zero kara Hajimeru Isekai Seikatsu",
+                link: "https://myanimelist.net/anime/31240/Re_Zero_kara_Hajimeru_Isekai_Seikatsu",
+                img: "https://cdn.myanimelist.net/images/anime/11/79410.jpg",
+                ytLink: "https://www.youtube.com/embed/vFfXjuVA1Jk?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Angel Beats!",
+                link: "https://myanimelist.net/anime/6547/Angel_Beats",
+                img: "https://cdn.myanimelist.net/images/anime/1244/111115.jpg",
+                ytLink: "https://www.youtube.com/embed/zkY-sG6crKI?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Boku no Hero Academia 3rd Season",
+                link: "https://myanimelist.net/anime/36456/Boku_no_Hero_Academia_3rd_Season",
+                img: "https://cdn.myanimelist.net/images/anime/1319/92084.jpg",
+                ytLink: "https://www.youtube.com/embed/_gWE61ujBQw?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "One Piece",
+                link: "https://myanimelist.net/anime/21/One_Piece",
+                img: "https://cdn.myanimelist.net/images/anime/6/73245.jpg",
+                ytLink: "https://www.youtube.com/embed/-tviZNY6CSw?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Akame ga Kill!",
+                link: "https://myanimelist.net/anime/22199/Akame_ga_Kill",
+                img: "https://cdn.myanimelist.net/images/anime/1429/95946.jpg",
+                ytLink: "https://www.youtube.com/embed/HOB4GZ1S1Wo?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Mirai Nikki (TV)",
+                link: "https://myanimelist.net/anime/10620/Mirai_Nikki_TV",
+                img: "https://cdn.myanimelist.net/images/anime/13/33465.jpg",
+                ytLink: "https://www.youtube.com/embed/52P0DM-JDMg?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Nanatsu no Taizai",
+                link: "https://myanimelist.net/anime/23755/Nanatsu_no_Taizai",
+                img: "https://cdn.myanimelist.net/images/anime/8/65409.jpg",
+                ytLink: "https://www.youtube.com/embed/wxcvbL6o55M?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Boku dake ga Inai Machi",
+                link: "https://myanimelist.net/anime/31043/Boku_dake_ga_Inai_Machi",
+                img: "https://cdn.myanimelist.net/images/anime/10/77957.jpg",
+                ytLink: "https://www.youtube.com/embed/GF5tqAD2ucg?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+            {
+                title: "Shingeki no Kyojin Season 3 Part 2",
+                link: "https://myanimelist.net/anime/38524/Shingeki_no_Kyojin_Season_3_Part_2",
+                img: "https://cdn.myanimelist.net/images/anime/1517/100633.jpg",
+                ytLink: "https://www.youtube.com/embed/s9PZFZgAqeM?enablejsapi=1&wmode=opaque&autoplay=1",
+            },
+        ],
+    },
+    {
+        title: "Anime & Manga News",
+        linkTitle: "View More",
+        link: "https://myanimelist.net/news",
+        Atom: MiniArticle,
+        items: [
+            {
+                link: "https://myanimelist.net/news/66033513",
+                img: "https://cdn.myanimelist.net/r/50x70/s/common/uploaded_files/1648786345-da2ac943dbd7d88d9d733052d372333a.jpeg?s=d6cfacda57f68d9b7e1f73a5c6aa7361",
+                title: "'Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei' Gets New TV Anime",
+                text: "The official website of the Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei (The Fruit of Evolution: Before I Knew It, My Life Had It Made) anime series announced a new television anime on Friday, titled Shin Shinka no Mi: Shiranai Uchi ni Kachigumi...",
+            },
+            {
+                link: "https://myanimelist.net/news/66029814",
+                img: "https://cdn.myanimelist.net/r/50x70/s/common/uploaded_files/1648742237-ed6c28ee37be163acdbb82a93895da7a.jpeg?s=2b0ddd34ddaca6660704eaf3f62bc7e9",
+                title: "'Arifureta Shokugyou de Sekai Saikyou' 2nd Season Announces OVA for Summer 2022",
+                text: "The 12th and final episode of Arifureta Shokugyou de Sekai Saikyou (Arifureta: From Commonplace to World's Strongest) 2nd season announced on Thursday that it will receive an original video animation in Summer 2022. Akira Iwanaga (Kingdom 2nd Season)...",
+            },
+            {
+                link: "https://myanimelist.net/news/66026550",
+                img: "https://cdn.myanimelist.net/r/50x70/s/common/uploaded_files/1648700269-dbbc3b9bc452adc5aebd5475775bc75f.jpeg?s=9a5e4bd8487a23ed87e0e9e96ee00ba4",
+                title: "'Mobile Suit Gundam: Cucuruz Doan's Island' Reveals Supporting Cast",
+                text: "The official website of the Kidou Senshi Gundam: Cucuruz Doan no Shima (Mobile Suit Gundam: Cucuruz Doan's Island) announced on Thursday five additional cast members, who're part of the Southern Cross team. The anime is scheduled to open in Japanese...",
+            },
+            {
+                link: "https://myanimelist.net/news/66019667",
+                img: "https://cdn.myanimelist.net/r/50x70/s/common/uploaded_files/1648608701-78bfc43f0977a0e7c7ead066eb1fb52c.jpeg?s=1af576ba083940798ceb13fc701bd9e1",
+                title: "'Kidou Senshi Gundam: Suisei no Majo' Unveils Teaser Promo, Prologue for Summer 2022",
+                text: "The 3rd Gundam Conference unveiled a teaser visual (pictured) and teaser promotional video for the Kidou Senshi Gundam: Suisei no Majo (Mobile Suit Gundam: The Witch from Mercury) television anime on Tuesday. The teaser visual and promo depict the se...",
             },
         ],
     },
