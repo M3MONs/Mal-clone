@@ -4,12 +4,12 @@ import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const Slider = ({ children }) => {
+const Slider = ({ children, slides = 4.5 }) => {
     return (
         <div>
             <Swiper
-                spaceBetween={0}
-                slidesPerView={4.5}
+                spaceBetween={30}
+                slidesPerView={slides}
                 navigation={true}
                 modules={[Navigation]}
                 loop={true}
