@@ -30,30 +30,16 @@ const Content = () => {
                 <LeftColumn>
                     {/* Map wypisuje wszystkie widgety z ContentItems w kolejności */}
                     {Widgets.map((widget) => (
-                        <Widget
-                            title={widget.title}
-                            linkTitle={widget.linkTitle}
-                            link={widget.link}
-                            slider={widget.slider}
-                            slides={widget?.slides ? widget.slides : null}
-                        >
+                        <Widget widget={widget}>
                             {/* Sprawdza czy widget posiada komponent Atom nastepnie czy to slider czy nie*/}
                             {widget?.Atom &&
-                                widget.items.map(({ img, title, link }) =>
+                                widget.items.map((item) =>
                                     widget?.slider ? (
                                         <SwiperSlide>
-                                            <widget.Atom
-                                                link={link}
-                                                title={title}
-                                                img={img}
-                                            ></widget.Atom>
+                                            <widget.Atom item={item}></widget.Atom>
                                         </SwiperSlide>
                                     ) : (
-                                        <widget.Atom
-                                            link={link}
-                                            title={title}
-                                            img={img}
-                                        ></widget.Atom>
+                                        <widget.Atom item={item}></widget.Atom>
                                     )
                                 )}
                         </Widget>
