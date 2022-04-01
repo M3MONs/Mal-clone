@@ -35,6 +35,7 @@ const Content = () => {
                             linkTitle={widget.linkTitle}
                             link={widget.link}
                             slider={widget.slider}
+                            slides={widget?.slides ? widget.slides : null}
                         >
                             {/* Sprawdza czy widget posiada komponent Atom nastepnie czy to slider czy nie*/}
                             {widget?.Atom &&
