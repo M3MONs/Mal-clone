@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.article`
-    margin: 0 10px 20px;
+    margin: 10px 10px 20px;
 `;
 
 export const Header = styled.div`
@@ -17,6 +17,9 @@ export const Header = styled.div`
     }
     a {
         color: ${({ theme }) => theme.colors.linkBlue};
+        &:hover {
+            text-decoration: underline;
+        }
     }
 `;
 

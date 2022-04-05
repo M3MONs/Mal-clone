@@ -27,6 +27,7 @@ Widget.propTypes = {
     linkTitle: PropTypes.string,
     link: PropTypes.string,
     slider: PropTypes.bool,
+    display: PropTypes.string,
 };
 
 export default Widget;
