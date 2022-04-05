@@ -8,6 +8,7 @@ export const Wrapper = styled.nav`
 `;
 
 export const NavWrapper = styled(Container)`
+    padding: 0px !important;
     && {
         height: 100%;
         display: flex;
