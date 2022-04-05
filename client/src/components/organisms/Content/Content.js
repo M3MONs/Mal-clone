@@ -9,7 +9,6 @@ import { SwiperSlide } from "swiper/react";
 import { Widgets } from "./data/ContentItems";
 
 const Wrapper = styled.div`
-    padding: 10px 0;
     border-left: 1px solid ${({ theme }) => theme.colors.gray};
     border-right: 1px solid ${({ theme }) => theme.colors.gray};
     display: flex;
