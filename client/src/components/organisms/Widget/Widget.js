@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Wrapper, Header, Content } from "./Widget.style";
-import Slider from "../Slider/Slider";
+import Slider from "components/molecules/Slider/Slider";
 
 const Widget = ({
     widget: { title, linkTitle, link, slider, slides = null, display = "block" },
