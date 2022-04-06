@@ -2,7 +2,9 @@ import EventLink from "components/atoms/EventLink/EventLink";
 import SeasonSlide from "components/atoms/SeasonSlide/SeasonSlide";
 import DefaultSlide from "components/atoms/DefaultSlide/DefaultSlide";
 import TrailerSlide from "components/atoms/TrailerSlide/TrailerSlide";
-import MiniArticle from "components/atoms/MiniArticle/MiniArticle";
+import MiniArticle from "components/molecules/MiniArticle/MiniArticle";
+import DiscussionLink from "components/atoms/DiscussionLink/DiscussionLink";
+import RecommendationLink from "components/molecules/RecommendationLink/RecommendationLink";
 
 export const Widgets = [
     {
@@ -604,6 +606,182 @@ export const Widgets = [
                 img: "https://cdn.myanimelist.net/r/50x70/s/common/uploaded_files/1648608701-78bfc43f0977a0e7c7ead066eb1fb52c.jpeg?s=1af576ba083940798ceb13fc701bd9e1",
                 title: "'Kidou Senshi Gundam: Suisei no Majo' Unveils Teaser Promo, Prologue for Summer 2022",
                 text: "The 3rd Gundam Conference unveiled a teaser visual (pictured) and teaser promotional video for the Kidou Senshi Gundam: Suisei no Majo (Mobile Suit Gundam: The Witch from Mercury) television anime on Tuesday. The teaser visual and promo depict the se...",
+            },
+        ],
+    },
+    {
+        title: "Recent Anime Discussions",
+        linkTitle: "View More",
+        link: "https://myanimelist.net/forum/",
+        Atom: DiscussionLink,
+        items: [
+            {
+                link: "https://myanimelist.net/forum/?topicid=2002807",
+                title: "Did someone else get you into anime or did you do it yourself?",
+                userLink: "https://myanimelist.net/profile/fluffycow17",
+                username: "fluffycow17",
+            },
+            {
+                link: "https://myanimelist.net/forum/?topicid=2005251",
+                title: "Is the time of romantic school dramas over?",
+                userLink: "https://myanimelist.net/profile/dadnaya",
+                username: "dadnaya",
+            },
+            {
+                link: "https://myanimelist.net/forum/?topicid=2005271",
+                title: "Would you rather",
+                userLink: "https://myanimelist.net/profile/YVREJN",
+                username: "YVREJN",
+            },
+            {
+                link: "https://myanimelist.net/forum/?topicid=2005036",
+                title: "How do you decide on what you're going to watch next?",
+                userLink: "https://myanimelist.net/profile/Animaay",
+                username: "Animaay",
+            },
+        ],
+    },
+    {
+        title: "Featured Articles",
+        linkTitle: "View More",
+        link: "https://myanimelist.net/forum/",
+        Atom: MiniArticle,
+        items: [
+            {
+                link: "https://myanimelist.net/featured/2377/%E2%80%9CSword_Art_Online%E2%80%9D_VR_Party_Report",
+                img: "https://cdn.myanimelist.net/r/50x70/s/common/uploaded_files/1646796845-d4559b97ee40e30f5dc2b6cdadff928a.jpeg?s=f07e000be76e83dbb316f1852d3c1858",
+                title: "“Sword Art Online” VR Party Report!",
+                text: "The world of SAO comes to VR!",
+                info: '<p class="info pr8">                 by <a href="https://myanimelist.net/profile/MAL_editing_team">MAL_editing_team</a>               </p>                                             <p class="di-tc pv pr8">                   <b>8,624</b> views                 </p>               <div class="tags">                     <div class="tags-inner"><span class="tag tag-color-feature-advertorial">Advertorial</span></div>                   </div>',
+            },
+            {
+                link: "https://myanimelist.net/featured/2372/Weiss_Schwarz_is_a_treat_for_any_anime_fan",
+                img: "https://cdn.myanimelist.net/r/50x70/s/common/uploaded_files/1639381057-40a1a4a17135da271f531570c730efd7.png?s=c5deae3e17361e08fbb7088570d4a399",
+                title: "Weiss Schwarz is a treat for any anime fan!",
+                text: "Vivid action, thrilling adventures, and zany antics that make you LOL – the fantastical world of anime offers us a slight reprieve from the mundanity of our daily lives. Dive deeper into your favorite worlds and relive the climactic scenes only in Weiss Schwarz (stylized: Weiß Schwarz)!",
+                info: '<p class="info pr8">                 by <a href="https://myanimelist.net/profile/MAL_editing_team">MAL_editing_team</a>               </p>                                             <p class="di-tc pv pr8">                   <b>25,918</b> views                 </p>               <div class="tags">                     <div class="tags-inner"><span class="tag tag-color-feature-advertorial">Advertorial</span></div>                   </div>',
+            },
+            {
+                link: "https://myanimelist.net/featured/2370/Top_10_Finalists_Which_web_novel_do_you_want_to_read_as_manga",
+                img: "https://cdn.myanimelist.net/r/50x70/s/common/uploaded_files/1636829781-4a91675c145e00d1c3dd337950ad4825.png?s=77f7e4448398de63a800d3d00569a377",
+                title: "Top 10 Finalists! Which web novel do you want to read as manga?",
+                text: "Here are the 10 finalist novels from the MAL x Honeyfeed Writing Contest! Try them out and let us know which web novels you want to see brought to life as published manga.",
+                info: '<p class="info pr8">                 by <a href="https://myanimelist.net/profile/MAL_editing_team">MAL_editing_team</a>               </p>                                             <p class="di-tc pv pr8">                   <b>49,221</b> views                 </p>',
+            },
+            {
+                link: "https://myanimelist.net/featured/2360/Introducing_the_Aniclub_Scene_with_How_Not_to_Summon_a_Demon_Lord_%CE%A9",
+                img: "https://cdn.myanimelist.net/r/50x70/s/common/uploaded_files/1623894500-7e105312e3ac46ae2a12d77842cc87b8.jpeg?s=73d7e6eb3de4a386d397b95956a55258",
+                title: "Introducing the Aniclub Scene with 'How Not to Summon a Demon Lord Ω'",
+                text: "What is Aniclub? And what does it have to do with 'How Not to Summon a Demon Lord Ω'? MOTSU wants you to know with these eight remixes.",
+                info: '<p class="info pr8">                 by <a href="https://myanimelist.net/profile/MAL_editing_team">MAL_editing_team</a>               </p>                                             <p class="di-tc pv pr8">                   <b>44,714</b> views                 </p>',
+            },
+        ],
+    },
+    {
+        title: "Latest Anime Reviews",
+        linkTitle: "View More",
+        link: "https://myanimelist.net/reviews.php?t=anime",
+        Atom: MiniArticle,
+        items: [
+            {
+                img: "https://cdn.myanimelist.net/r/50x70/images/anime/1561/115660.jpg?s=79acc51ecc77b35fe5f61096dec935c3",
+                link: "https://myanimelist.net/anime/1887/Lucky☆Star",
+                rating: "Overall Rating: 5",
+                title: "Lucky☆Star",
+                text: "if i can't finish it, it's not that great right?\naround episode 15 it became impossible to finish this anime without skipping a lot\n\nthe main problem is that there is no overall plot, every episode is about casual things that happen in our life like missing a bus, so after a while it becomes repetitive \nand this anime is just SOOO nice! nothing...\n                          read more\n                        ",
+                reviewLink: "/reviews.php?id=440386",
+                author: '1 hour ago             by             <a href="https://myanimelist.net/profile/AgentBishop" alt="AgentBishop">               AgentBishop             </a>',
+            },
+            {
+                img: "https://cdn.myanimelist.net/r/50x70/images/anime/5/66083.jpg?s=59ab3e9362a2bbed54ae5420b27032bb",
+                link: "https://myanimelist.net/anime/23289/Gekkan_Shoujo_Nozaki-kun",
+                rating: "Overall Rating: 10",
+                title: "Gekkan Shoujo Nozaki-kun",
+                text: "This is one of the funniest anime I've ever seen! It's a great satire of the Shojo genre, with each character being a complete idiot and always, at one point, be the straight man in the comedy. The main cast is a joy to watch; all of them have their moment to shine. The anime unfortunately ends on a cliche note and no hopes for a season 2, but I implore...\n                          read more\n                        ",
+                reviewLink: "/reviews.php?id=440385",
+                author: '1 hour ago             by             <a href="https://myanimelist.net/profile/milfenjoyer358" alt="milfenjoyer358">               milfenjoyer358             </a>',
+            },
+            {
+                img: "https://cdn.myanimelist.net/r/50x70/images/anime/1418/107954.jpg?s=14409bdc75985f4b2a9d0fbe2883cd78",
+                link: "https://myanimelist.net/anime/40052/Great_Pretender",
+                rating: "Overall Rating: 7",
+                title: "Great Pretender",
+                text: "A show about a group of conmen, their individual traumas and 4 cases related to each one.\n\nI'll start with the good things. The cases and subplots were mostly interesting and the show overall entertaining. Each case was related to one of the four main characters' pasts and the scams were smart and thought through. The villains were really hateable...\n                          read more\n                        ",
+                reviewLink: "/reviews.php?id=440384",
+                author: '1 hour ago             by             <a href="https://myanimelist.net/profile/nickmsakis" alt="nickmsakis">               nickmsakis             </a>',
+            },
+            {
+                img: "https://cdn.myanimelist.net/r/50x70/images/anime/1948/120625.jpg?s=53584a9c479506f8c779fb38b02d1a6d",
+                link: "https://myanimelist.net/anime/48583/Shingeki_no_Kyojin__The_Final_Season_Part_2",
+                rating: "Overall Rating: 10",
+                title: "Shingeki no Kyojin: The Final Season Part 2",
+                text: "one more season of AOT ends, and leaves us once again the satisfaction of being able to call this a masterpiece, this review does not contain manga spoilers, read it calmly.\n\nAt the level of animation and drawing I think there is nothing to discuss, there was an incredible improvement compared to the first part, the drawings were much more polished...\n                          read more\n                        ",
+                reviewLink: "/reviews.php?id=440382",
+                author: '1 hour ago             by             <a href="https://myanimelist.net/profile/maldonado3008" alt="maldonado3008">               maldonado3008             </a>',
+            },
+        ],
+    },
+    {
+        title: "Latest Anime Recommendations",
+        linkTitle: "View More",
+        link: "https://myanimelist.net/recommendations.php?s=recentrecs&t=anime",
+        Atom: RecommendationLink,
+        items: [
+            {
+                first: {
+                    img: "https://cdn.myanimelist.net/r/50x70/images/anime/10/47347.jpg?s=29949c6e892df123f0b0563e836d3d98",
+                    link: "https://myanimelist.net/anime/16498/Shingeki_no_Kyojin",
+                    title: "Shingeki no Kyojin",
+                },
+                second: {
+                    img: "https://cdn.myanimelist.net/r/50x70/images/anime/4/84177.jpg?s=74f2f396ab23eee08691546aaa2c6fad",
+                    link: "https://myanimelist.net/anime/25777/Shingeki_no_Kyojin_Season_2",
+                    title: "Shingeki no Kyojin Season 2",
+                },
+                text: "Same goated series",
+                recom: 'Anime rec by <a href="https://myanimelist.net/profile/Michael_S1230">Michael_S1230</a>           - 5 hours ago',
+            },
+            {
+                first: {
+                    img: "https://cdn.myanimelist.net/r/50x70/images/anime/8/55411.jpg?s=df971927b6d97ec0bb76a3e8be4efbd0",
+                    link: "https://myanimelist.net/anime/2389/Kagaku_Ninja-tai_Gatchaman",
+                    title: "Kagaku Ninja-tai Gatchaman",
+                },
+                second: {
+                    img: "https://cdn.myanimelist.net/r/50x70/images/anime/7/60395.jpg?s=507abc31d244aee09ea284f945b0a761",
+                    link: "https://myanimelist.net/anime/4810/Shinzou_Ningen_Casshern",
+                    title: "Shinzou Ningen Casshern",
+                },
+                text: "Both are classic and influental anime superheroes by the same studio and creator. Both features superheroes that wears helmet and rides on planes and vehicles. Both features alot of melodrama and action",
+                recom: 'Anime rec by <a href="https://myanimelist.net/profile/Sinister_Garbage">Sinister_Garbage</a>           - 7 hours ago',
+            },
+            {
+                first: {
+                    img: "https://cdn.myanimelist.net/r/50x70/images/anime/8/55411.jpg?s=df971927b6d97ec0bb76a3e8be4efbd0",
+                    link: "https://myanimelist.net/anime/2389/Kagaku_Ninja-tai_Gatchaman",
+                    title: "Kagaku Ninja-tai Gatchaman",
+                },
+                second: {
+                    img: "https://cdn.myanimelist.net/r/50x70/images/anime/9/60393.jpg?s=a7c5289dcf967c1531d42768170a3f67",
+                    link: "https://myanimelist.net/anime/4808/Hurricane_Polymar",
+                    title: "Hurricane Polymar",
+                },
+                text: "Hurricane Polymar is mostly known as a Gatchaman clone as both have similar designs being a caped superhero with a helmet and both have abilities to create a windstorm. Although Hurricane had more power...                       read more",
+                recom: 'Anime rec by <a href="https://myanimelist.net/profile/Sinister_Garbage">Sinister_Garbage</a>           - 7 hours ago',
+            },
+            {
+                first: {
+                    img: "https://cdn.myanimelist.net/r/50x70/images/anime/1880/118484.jpg?s=73b91a0146dfa5fadc5ff9f870c72741",
+                    link: "https://myanimelist.net/anime/41025/Fumetsu_no_Anata_e",
+                    title: "Fumetsu no Anata e",
+                },
+                second: {
+                    img: "https://cdn.myanimelist.net/r/50x70/images/anime/1401/118483.jpg?s=892f8e6c7e52a39635eb4eb5460d02f5",
+                    link: "https://myanimelist.net/anime/48580/Vanitas_no_Karte",
+                    title: "Vanitas no Karte",
+                },
+                text: "Both are animes about the duet/protagonist meeting new people in hope to finish their mission, the characters have tragic backgrounds and they usually have to face them somehow. The characters usually...                       read more",
+                recom: 'Anime rec by <a href="https://myanimelist.net/profile/Caromel3">Caromel3</a>           - 7 hours ago',
             },
         ],
     },
