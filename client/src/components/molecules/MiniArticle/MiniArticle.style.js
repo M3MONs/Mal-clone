@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
 
     img {
-        border: 1px solid ${({ theme }) => theme.colors.gray};
+        border: 1px solid ${({ theme }) => theme.colors.darkGray};
         padding: 1px;
     }
 
