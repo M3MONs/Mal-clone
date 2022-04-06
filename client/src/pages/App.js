@@ -9,7 +9,7 @@ const Wrapper = styled.div`
     /* background-color: ${({ theme }) => theme.colors.lightBlue}; */
     min-height: 100vh;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 `;
 
 const StyledContainer = styled(Container)`
