@@ -10,7 +10,7 @@ export const theme = {
         pink: "#FFDBDA",
         darkWhite: "#E1E7F5",
         gray: "#ebebeb",
-        darkGray: "#bebebe",
+        darkGray: "#7f7f7f",
         white: "#FFFFFF",
     },
 };
