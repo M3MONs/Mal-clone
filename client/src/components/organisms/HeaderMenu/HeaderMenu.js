@@ -9,6 +9,7 @@ const HeaderMenu = () => {
     return (
         <Wrapper>
             <DropdownsWrapper>
+                {/* Wypisuje Dropdowns z pliku data/DropdownItems */}
                 {Dropdowns && Dropdowns.map((i) => <Dropdown name={i.name} linksTable={i.items} />)}
             </DropdownsWrapper>
             <SearchBar />
