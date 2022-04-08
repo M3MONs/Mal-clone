@@ -8,8 +8,9 @@ import Home from "./Home";
 const Wrapper = styled.div`
     /* background-color: ${({ theme }) => theme.colors.lightBlue}; */
     min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
+    width: 1060px;
+    margin: 0 auto;
+    /* overflow-x: hidden; */
 `;
 
 const StyledContainer = styled(Container)`
