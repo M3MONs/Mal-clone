@@ -6,7 +6,9 @@ import Widget from "../Widget/Widget";
 
 import { SwiperSlide } from "swiper/react";
 
-import { Widgets } from "./data/ContentItems";
+import { LeftWidgets, RightWidgets } from "./data/ContentItems";
+import RightWidget from "components/molecules/RightWidget/RightWidget";
+import RightWidgetItem from "components/atoms/RightWidgetItem/RightWidgetItem";
 
 const Wrapper = styled.div`
     border-left: 1px solid ${({ theme }) => theme.colors.gray};
@@ -15,11 +17,13 @@ const Wrapper = styled.div`
 `;
 
 const LeftColumn = styled.div`
-    width: 780px;
+    width: 740px;
     border-right: 1px solid ${({ theme }) => theme.colors.gray};
 `;
 
-const RightColumn = styled.div``;
+const RightColumn = styled.div`
+    width: 322px;
+`;
 
 const Content = () => {
     return (
@@ -28,7 +32,7 @@ const Content = () => {
             <Wrapper>
                 <LeftColumn>
                     {/* Map wypisuje wszystkie widgety z ContentItems w kolejności */}
-                    {Widgets.map((widget) => (
+                    {LeftWidgets.map((widget) => (
                         <Widget widget={widget}>
                             {/* Sprawdza czy widget posiada komponent Atom nastepnie czy to slider czy nie*/}
                             {widget?.Atom &&
@@ -45,7 +49,13 @@ const Content = () => {
                     ))}
                 </LeftColumn>
                 <RightColumn>
-                    <h1>Right</h1>
+                    {RightWidgets.map((widget) => (
+                        <RightWidget widget={widget}>
+                            {widget.items.map((item) => (
+                                <RightWidgetItem item={item}></RightWidgetItem>
+                            ))}
+                        </RightWidget>
+                    ))}
                 </RightColumn>
             </Wrapper>
         </>
