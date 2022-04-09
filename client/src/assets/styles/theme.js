@@ -12,6 +12,7 @@ export const theme = {
         darkWhite: "#E1E7F5",
         gray: "#ebebeb",
         darkGray: "#7f7f7f",
+        footerGray: "#9caed9",
         white: "#FFFFFF",
     },
 };
