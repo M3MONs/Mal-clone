@@ -4,18 +4,18 @@ import styled, { ThemeProvider } from "styled-components";
 import { theme } from "assets/styles/theme";
 import NavBar from "components/organisms/NavBar/NavBar";
 import Home from "./Home";
+import Footer from "components/organisms/Footer/Footer";
 
 const Wrapper = styled.div`
-    /* background-color: ${({ theme }) => theme.colors.lightBlue}; */
     min-height: 100vh;
     width: 1060px;
     margin: 0 auto;
-    /* overflow-x: hidden; */
 `;
 
 const StyledContainer = styled(Container)`
     && {
-        padding: 0px;
+        padding: 0px 0px 10px;
+        border: 1px solid ${({ theme }) => theme.colors.gray};
     }
 `;
 
@@ -30,6 +30,7 @@ function App() {
                         <Home />
                     </StyledContainer>
                 </Wrapper>
+                <Footer />
             </ThemeProvider>
         </>
     );
