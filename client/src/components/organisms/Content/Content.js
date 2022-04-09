@@ -11,8 +11,6 @@ import RightWidget from "components/molecules/RightWidget/RightWidget";
 import RightWidgetItem from "components/atoms/RightWidgetItem/RightWidgetItem";
 
 const Wrapper = styled.div`
-    border-left: 1px solid ${({ theme }) => theme.colors.gray};
-    border-right: 1px solid ${({ theme }) => theme.colors.gray};
     display: flex;
 `;
 
