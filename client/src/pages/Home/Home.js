@@ -1,28 +1,13 @@
 import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
-import Widget from "../Widget/Widget";
-
 import { SwiperSlide } from "swiper/react";
 
+import { Wrapper, LeftColumn, RightColumn } from "./Home.style";
+import Widget from "components/organisms/Widget/Widget";
 import { LeftWidgets, RightWidgets } from "./data/ContentItems";
 import RightWidget from "components/molecules/RightWidget/RightWidget";
 import RightWidgetItem from "components/atoms/RightWidgetItem/RightWidgetItem";
 
-const Wrapper = styled.div`
-    display: flex;
-`;
-
-const LeftColumn = styled.div`
-    width: 740px;
-    border-right: 1px solid ${({ theme }) => theme.colors.gray};
-`;
-
-const RightColumn = styled.div`
-    width: 322px;
-`;
-
-const Content = () => {
+const Home = () => {
     return (
         <>
             <Wrapper>
@@ -58,17 +43,4 @@ const Content = () => {
     );
 };
 
-Content.propTypes = {
-    Widgets: PropTypes.arrayOf(
-        PropTypes.shape({
-            title: PropTypes.string,
-            linkTitle: PropTypes.string,
-            link: PropTypes.string,
-            slider: PropTypes.bool,
-            items: PropTypes.array,
-            Atom: PropTypes.element,
-        })
-    ),
-};
-
-export default Content;
+export default Home;
