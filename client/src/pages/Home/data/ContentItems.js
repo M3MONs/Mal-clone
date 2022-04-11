@@ -393,7 +393,7 @@ export const LeftWidgets = [
         link: "https://myanimelist.net/watch/promotion/popular",
         Atom: TrailerSlide,
         slider: true,
-        slides: 3.5,
+        slides: 3.25,
         items: [
             {
                 title: "Shingeki no Kyojin",
