@@ -26,7 +26,6 @@ const RightColumn = styled.div`
 const Content = () => {
     return (
         <>
-            <HelloMessage />
             <Wrapper>
                 <LeftColumn>
                     {/* Map wypisuje wszystkie widgety z ContentItems w kolejności */}
