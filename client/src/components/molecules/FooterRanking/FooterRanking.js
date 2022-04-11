@@ -1,4 +1,4 @@
-import { DefaultLink } from "components/atoms/DefaultLink/DefaultLink";
+import { DefaultLink } from "components/atoms/Links/DefaultLink/DefaultLink";
 import React from "react";
 import styled from "styled-components";
 

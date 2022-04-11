@@ -1,5 +1,5 @@
 import React from "react";
-import RecommendationCell from "components/atoms/RecommendationCell/RecommendationCell";
+import RecommendationCell from "components/atoms/Links/RecommendationLink/RecommendationLink";
 import { Wrapper } from "./RecommendationLink.style";
 
 const RecommendationLink = ({ item: { text, recom, first, second } }) => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { DefaultLink } from "../DefaultLink/DefaultLink";
+import { DefaultLink } from "../../Links/DefaultLink/DefaultLink";
 import { TrailerVideo } from "./TrailerSlide.style";
 
 const TrailerSlide = ({ item: { title, link, img, ytLink } }) => {

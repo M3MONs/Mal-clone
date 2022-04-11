@@ -1,6 +1,6 @@
 import React from "react";
 import { Wrapper } from "./DefaultSlide.style";
-import { DefaultLink } from "../DefaultLink/DefaultLink";
+import { DefaultLink } from "../../Links/DefaultLink/DefaultLink";
 
 const DefaultSlide = ({ item: { img, link, title } }) => {
     return (

@@ -1,8 +1,8 @@
 import React from "react";
 import { DefaultLink } from "../DefaultLink/DefaultLink";
-import { Wrapper, InfoContent } from "./RightWidgetItem.style";
+import { Wrapper, InfoContent } from "./RightWidgetLink.style";
 
-const RightWidgetItem = ({ item }) => {
+const RightWidgetLink = ({ item }) => {
     return (
         <Wrapper>
             <div className='number'>{item.ranking}</div>
@@ -18,4 +18,4 @@ const RightWidgetItem = ({ item }) => {
     );
 };
 
-export default RightWidgetItem;
+export default RightWidgetLink;

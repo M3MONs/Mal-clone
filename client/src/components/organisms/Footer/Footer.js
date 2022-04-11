@@ -1,4 +1,4 @@
-import FooterRankingItem from "components/atoms/FooterRankingItem/FooterRankingItem";
+import FooterRankingItem from "components/atoms/Links/FooterRankingLink/FooterRankingLink";
 import FooterLinks from "components/molecules/FooterLinks/FooterLinks";
 import FooterRanking from "components/molecules/FooterRanking/FooterRanking";
 import React from "react";

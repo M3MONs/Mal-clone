@@ -1,9 +1,9 @@
-import EventLink from "components/atoms/EventLink/EventLink";
-import SeasonSlide from "components/atoms/SeasonSlide/SeasonSlide";
-import DefaultSlide from "components/atoms/DefaultSlide/DefaultSlide";
-import TrailerSlide from "components/atoms/TrailerSlide/TrailerSlide";
+import EventLink from "components/atoms/Links/EventLink/EventLink";
+import SeasonSlide from "components/atoms/Sliders/SeasonSlide/SeasonSlide";
+import DefaultSlide from "components/atoms/Sliders/DefaultSlide/DefaultSlide";
+import TrailerSlide from "components/atoms/Sliders/TrailerSlide/TrailerSlide";
 import MiniArticle from "components/molecules/MiniArticle/MiniArticle";
-import DiscussionLink from "components/atoms/DiscussionLink/DiscussionLink";
+import DiscussionLink from "components/atoms/Links/DiscussionLink/DiscussionLink";
 import RecommendationLink from "components/molecules/RecommendationLink/RecommendationLink";
 
 export const LeftWidgets = [

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { LinksList } from "./Dropdown.style";
-import DropdownLink from "components/atoms/DropdownLink/DropdownLink";
+import DropdownLink from "components/atoms/Links/DropdownLink/DropdownLink";
 
 const DropdownLinks = ({ links }) => {
     return (

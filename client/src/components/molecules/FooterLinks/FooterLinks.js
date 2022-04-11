@@ -1,4 +1,4 @@
-import { SocialsIcon } from "components/atoms/SocialsIcon/SocialsIcon";
+import { SocialsIcon } from "components/atoms/Icons/SocialsIcon/SocialsIcon";
 import React from "react";
 import { Wrapper, Block } from "./FooterLinks.style";
 

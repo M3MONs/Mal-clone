@@ -1,8 +1,8 @@
 import React from "react";
 import { DefaultLink } from "../DefaultLink/DefaultLink";
-import { Cell } from "./RecommendationCell.style";
+import { Cell } from "./RecommendationLink.style";
 
-const RecommendationCell = ({ anime, first = false }) => {
+const RecommendationLink = ({ anime, first = false }) => {
     return (
         <Cell valign='top'>
             <div className='anime'>
@@ -22,4 +22,4 @@ const RecommendationCell = ({ anime, first = false }) => {
     );
 };
 
-export default RecommendationCell;
+export default RecommendationLink;

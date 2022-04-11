@@ -12,7 +12,7 @@ const Wrapper = styled.li`
     }
 `;
 
-const FooterRankingItem = ({ item, rank }) => {
+const FooterRankingLink = ({ item, rank }) => {
     return (
         <Wrapper>
             <span className='rank'>{rank}</span>
@@ -23,4 +23,4 @@ const FooterRankingItem = ({ item, rank }) => {
     );
 };
 
-export default FooterRankingItem;
+export default FooterRankingLink;

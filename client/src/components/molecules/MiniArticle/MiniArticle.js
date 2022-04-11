@@ -1,6 +1,6 @@
 import React from "react";
 import { Wrapper } from "./MiniArticle.style";
-import { DefaultLink } from "../../atoms/DefaultLink/DefaultLink";
+import { DefaultLink } from "../../atoms/Links/DefaultLink/DefaultLink";
 
 const MiniArticle = ({
     item: { title, link, img, text, info = null, author = null, rating = null },

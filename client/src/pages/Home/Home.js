@@ -5,7 +5,7 @@ import { Wrapper, LeftColumn, RightColumn } from "./Home.style";
 import Widget from "components/organisms/Widget/Widget";
 import { LeftWidgets, RightWidgets } from "./data/ContentItems";
 import RightWidget from "components/molecules/RightWidget/RightWidget";
-import RightWidgetItem from "components/atoms/RightWidgetItem/RightWidgetItem";
+import RightWidgetItem from "components/atoms/Links/RightWidgetLink/RightWidgetLink";
 
 const Home = () => {
     return (

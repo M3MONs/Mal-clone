@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink } from "components/atoms/NavLink/NavLink";
+import { NavLink } from "components/atoms/Links/NavLink/NavLink";
 import { LinkItems } from "./data/LinkItems";
 
 const Wrapper = styled.div`
