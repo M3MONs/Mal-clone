@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import HelloMessage from "components/atoms/HelloMessage/HelloMessage";
 import Widget from "../Widget/Widget";
 
 import { SwiperSlide } from "swiper/react";
