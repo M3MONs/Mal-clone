@@ -22,16 +22,13 @@ const StyledContainer = styled(Container)`
 function App() {
     return (
         <>
-            <GlobalStyle />
-            <ThemeProvider theme={theme}>
-                <Wrapper>
-                    <NavBar />
-                    <StyledContainer minwidth='sm'>
-                        <Home />
-                    </StyledContainer>
-                </Wrapper>
-                <Footer />
-            </ThemeProvider>
+            <Wrapper>
+                <NavBar />
+                <StyledContainer minwidth='sm'>
+                    <Home />
+                </StyledContainer>
+            </Wrapper>
+            <Footer />
         </>
     );
 }
