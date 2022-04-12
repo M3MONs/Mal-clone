@@ -1,7 +1,5 @@
-import GlobalStyle from "assets/styles/GlobalStyle";
 import { Container } from "@material-ui/core";
-import styled, { ThemeProvider } from "styled-components";
-import { theme } from "assets/styles/theme";
+import styled from "styled-components";
 import NavBar from "components/organisms/NavBar/NavBar";
 import Home from "./Home/Home";
 import Footer from "components/organisms/Footer/Footer";
