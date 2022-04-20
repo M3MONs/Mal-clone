@@ -9,6 +9,8 @@ const scrapEvents = require("./services/scrapEvents");
 const scrapSeasonAnime = require("./services/scrapSeasonAnime");
 const scrapMangaList = require("./services/scrapMangaList");
 const scrapLatestAnime = require("./services/scrapLatestAnime");
+const scrapTrailers = require("./services/scrapTrailers");
+const scrapNews = require("./services/scrapNews");
 
 app.use(cors());
 
@@ -16,13 +18,16 @@ var port = process.env.PORT || 3001;
 
 async function getMalHomePage() {
     try {
-        console.log("Fetched MalHomePage!");
         const { data } = await axios.get("https://myanimelist.net/");
+        console.log("Fetched MalHomePage!");
         const $ = cheerio.load(data);
+        // Scrapping events
         scrapEvents($);
         scrapSeasonAnime($);
         scrapMangaList($);
         scrapLatestAnime($);
+        scrapTrailers($);
+        scrapNews($);
     } catch (e) {
         console.log(e);
     }
