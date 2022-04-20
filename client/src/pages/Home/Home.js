@@ -1,5 +1,4 @@
 import React from "react";
-import { SwiperSlide } from "swiper/react";
 
 import { Wrapper, LeftColumn, RightColumn } from "./Home.style";
 import Widget from "components/organisms/Widget/Widget";
@@ -14,19 +13,7 @@ const Home = () => {
                 <LeftColumn>
                     {/* Map wypisuje wszystkie widgety z ContentItems w kolejności */}
                     {LeftWidgets.map((widget) => (
-                        <Widget widget={widget}>
-                            {/* Sprawdza czy widget posiada komponent Atom nastepnie czy to slider czy nie*/}
-                            {widget?.Atom &&
-                                widget.items.map((item) =>
-                                    widget?.slider ? (
-                                        <SwiperSlide>
-                                            <widget.Atom item={item}></widget.Atom>
-                                        </SwiperSlide>
-                                    ) : (
-                                        <widget.Atom item={item}></widget.Atom>
-                                    )
-                                )}
-                        </Widget>
+                        <Widget widget={widget} />
                     ))}
                 </LeftColumn>
                 <RightColumn>
