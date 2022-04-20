@@ -54,6 +54,16 @@ app.post("/latest", function (req, res) {
     res.sendFile(__dirname + "/data/latestEpisodes.json");
 });
 
+app.post("/trailers", function (req, res) {
+    res.header("Content-Type", "application/json");
+    res.sendFile(__dirname + "/data/trailers.json");
+});
+
+app.post("/news", function (req, res) {
+    res.header("Content-Type", "application/json");
+    res.sendFile(__dirname + "/data/news.json");
+});
+
 // interval for scraping
 function fetchInterval() {
     getMalHomePage();
