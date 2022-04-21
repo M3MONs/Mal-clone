@@ -83,9 +83,9 @@ app.post("/news", function (req, res) {
     res.sendFile(__dirname + "/data/news.json");
 });
 
-app.post("/disscussions", function (req, res) {
+app.post("/discussions", function (req, res) {
     res.header("Content-Type", "application/json");
-    res.sendFile(__dirname + "/data/disscussions.json");
+    res.sendFile(__dirname + "/data/discussions.json");
 });
 
 app.post("/articles", function (req, res) {
